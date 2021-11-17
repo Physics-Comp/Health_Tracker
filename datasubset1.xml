@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<Data>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 19:00:36 -0600" startDate="2018-07-19 18:59:06 -0600" endDate="2018-07-19 18:59:06 -0600" value="63">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 19:15:20 -0600" startDate="2018-07-19 19:15:16 -0600" endDate="2018-07-19 19:15:16 -0600" value="92">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="2"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 19:20:57 -0600" startDate="2018-07-19 19:00:56 -0600" endDate="2018-07-19 19:00:56 -0600" value="64">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="1"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 19:26:14 -0600" startDate="2018-07-19 19:25:11 -0600" endDate="2018-07-19 19:25:11 -0600" value="90">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 19:43:12 -0600" startDate="2018-07-19 19:37:21 -0600" endDate="2018-07-19 19:37:21 -0600" value="88">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="1"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 19:47:14 -0600" startDate="2018-07-19 19:42:58 -0600" endDate="2018-07-19 19:42:58 -0600" value="77">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 19:51:40 -0600" startDate="2018-07-19 19:48:18 -0600" endDate="2018-07-19 19:48:18 -0600" value="74">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="1"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 19:58:33 -0600" startDate="2018-07-19 19:54:46 -0600" endDate="2018-07-19 19:54:46 -0600" value="70">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:00:31 -0600" startDate="2018-07-19 19:59:05 -0600" endDate="2018-07-19 19:59:05 -0600" value="73">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="1"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:05:31 -0600" startDate="2018-07-19 20:02:31 -0600" endDate="2018-07-19 20:02:31 -0600" value="74">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="1"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:12:42 -0600" startDate="2018-07-19 20:08:02 -0600" endDate="2018-07-19 20:08:02 -0600" value="76">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="1"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:19:35 -0600" startDate="2018-07-19 20:14:12 -0600" endDate="2018-07-19 20:14:12 -0600" value="78">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:21:22 -0600" startDate="2018-07-19 20:20:04 -0600" endDate="2018-07-19 20:20:04 -0600" value="70">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="1"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:27:57 -0600" startDate="2018-07-19 20:21:15 -0600" endDate="2018-07-19 20:21:15 -0600" value="79">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:32:57 -0600" startDate="2018-07-19 20:27:06 -0600" endDate="2018-07-19 20:27:06 -0600" value="71">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:35:17 -0600" startDate="2018-07-19 20:35:13 -0600" endDate="2018-07-19 20:35:13 -0600" value="74">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="2"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:35:53 -0600" startDate="2018-07-19 20:30:20 -0600" endDate="2018-07-19 20:30:20 -0600" value="62">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:49:19 -0600" startDate="2018-07-19 20:39:46 -0600" endDate="2018-07-19 20:39:46 -0600" value="59">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:52:50 -0600" startDate="2018-07-19 20:49:11 -0600" endDate="2018-07-19 20:49:11 -0600" value="69">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 20:57:01 -0600" startDate="2018-07-19 20:52:51 -0600" endDate="2018-07-19 20:52:51 -0600" value="72">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="1"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:01:11 -0600" startDate="2018-07-19 20:57:41 -0600" endDate="2018-07-19 20:57:41 -0600" value="86">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:07:14 -0600" startDate="2018-07-19 21:06:29 -0600" endDate="2018-07-19 21:06:29 -0600" value="89">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="2"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:11:00 -0600" startDate="2018-07-19 21:01:06 -0600" endDate="2018-07-19 21:01:06 -0600" value="78">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:15:20 -0600" startDate="2018-07-19 21:14:11 -0600" endDate="2018-07-19 21:14:11 -0600" value="61">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="1"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:22:27 -0600" startDate="2018-07-19 21:15:37 -0600" endDate="2018-07-19 21:15:37 -0600" value="70">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:33:54 -0600" startDate="2018-07-19 21:23:38 -0600" endDate="2018-07-19 21:23:38 -0600" value="72">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="1"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:36:47 -0600" startDate="2018-07-19 21:33:50 -0600" endDate="2018-07-19 21:33:50 -0600" value="76">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:37:40 -0600" startDate="2018-07-19 21:37:29 -0600" endDate="2018-07-19 21:37:29 -0600" value="68.0132">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:40:41 -0600" startDate="2018-07-19 21:38:10 -0600" endDate="2018-07-19 21:38:10 -0600" value="73">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:43:29 -0600" startDate="2018-07-19 21:43:29 -0600" endDate="2018-07-19 21:43:29 -0600" value="68">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:43:34 -0600" startDate="2018-07-19 21:43:34 -0600" endDate="2018-07-19 21:43:34 -0600" value="68">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:43:39 -0600" startDate="2018-07-19 21:43:39 -0600" endDate="2018-07-19 21:43:39 -0600" value="71">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:43:44 -0600" startDate="2018-07-19 21:43:40 -0600" endDate="2018-07-19 21:43:40 -0600" value="71">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierHeartRate" sourceName="Andrew’s Apple Watch" sourceVersion="4.3" device="&lt;&lt;HKDevice: 0x283a54f00&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3&gt;" unit="count/min" creationDate="2018-07-19 21:43:49 -0600" startDate="2018-07-19 21:43:45 -0600" endDate="2018-07-19 21:43:45 -0600" value="74">
+    <MetadataEntry key="HKMetadataKeyHeartRateMotionContext" value="0"/>
+  </Record>
+  <Record type="HKQuantityTypeIdentifierActiveEnergyBurned" sourceName="Andrew’s Apple Watch" sourceVersion="4.3.2" device="&lt;&lt;HKDevice: 0x283a35b80&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3.2&gt;" unit="Cal" creationDate="2018-11-22 14:50:01 -0600" startDate="2018-11-22 14:48:44 -0600" endDate="2018-11-22 14:49:45 -0600" value="0.306"/>
+  <Record type="HKQuantityTypeIdentifierActiveEnergyBurned" sourceName="Andrew’s Apple Watch" sourceVersion="4.3.2" device="&lt;&lt;HKDevice: 0x283a35b80&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3.2&gt;" unit="Cal" creationDate="2018-11-22 14:53:46 -0600" startDate="2018-11-22 14:49:45 -0600" endDate="2018-11-22 14:49:55 -0600" value="0.051"/>
+  <Record type="HKQuantityTypeIdentifierActiveEnergyBurned" sourceName="Andrew’s Apple Watch" sourceVersion="4.3.2" device="&lt;&lt;HKDevice: 0x283a35b80&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3.2&gt;" unit="Cal" creationDate="2018-11-22 14:56:25 -0600" startDate="2018-11-22 14:49:55 -0600" endDate="2018-11-22 14:50:57 -0600" value="0.306"/>
+  <Record type="HKQuantityTypeIdentifierActiveEnergyBurned" sourceName="Andrew’s Apple Watch" sourceVersion="4.3.2" device="&lt;&lt;HKDevice: 0x283a35b80&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3.2&gt;" unit="Cal" creationDate="2018-11-22 14:56:25 -0600" startDate="2018-11-22 14:50:57 -0600" endDate="2018-11-22 14:51:58 -0600" value="0.306"/>
+  <Record type="HKQuantityTypeIdentifierActiveEnergyBurned" sourceName="Andrew’s Apple Watch" sourceVersion="4.3.2" device="&lt;&lt;HKDevice: 0x283a35b80&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3.2&gt;" unit="Cal" creationDate="2018-11-22 14:56:25 -0600" startDate="2018-11-22 14:51:58 -0600" endDate="2018-11-22 14:52:59 -0600" value="0.306"/>
+  <Record type="HKQuantityTypeIdentifierActiveEnergyBurned" sourceName="Andrew’s Apple Watch" sourceVersion="4.3.2" device="&lt;&lt;HKDevice: 0x283a35b80&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3.2&gt;" unit="Cal" creationDate="2018-11-22 14:56:25 -0600" startDate="2018-11-22 14:52:59 -0600" endDate="2018-11-22 14:53:40 -0600" value="0.204"/>
+  <Record type="HKQuantityTypeIdentifierActiveEnergyBurned" sourceName="Andrew’s Apple Watch" sourceVersion="4.3.2" device="&lt;&lt;HKDevice: 0x283a35b80&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3.2&gt;" unit="Cal" creationDate="2018-11-22 14:58:46 -0600" startDate="2018-11-22 14:53:40 -0600" endDate="2018-11-22 14:54:42 -0600" value="0.306"/>
+  <Record type="HKQuantityTypeIdentifierActiveEnergyBurned" sourceName="Andrew’s Apple Watch" sourceVersion="4.3.2" device="&lt;&lt;HKDevice: 0x283a35b80&gt;, name:Apple Watch, manufacturer:Apple, model:Watch, hardware:Watch3,1, software:4.3.2&gt;" unit="Cal" creationDate="2018-11-22 14:58:46 -0600" startDate="2018-11-22 14:54:42 -0600" endDate="2018-11-22 14:55:43 -0600" value="0.306"/>
+
+</Data>
