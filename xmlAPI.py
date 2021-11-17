@@ -3,9 +3,9 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 import sys 
 import os
-sys.path.append(os.path.abspath("/Users/andrewmatthews/Desktop/Code/Health_Tracker/Data_Analysis"))   
+sys.path.append(os.path.abspath("/Users/andrewmatthews/Desktop/Code/Health_Tracker"))   
 import healthAnz
-tree = ET.parse("test2.xml")
+tree = ET.parse("datasubset1.xml")
 root = tree.getroot()
 
 #Print root (Which should be data as defined in test1.xml)
