@@ -70,9 +70,9 @@ def exerciseID(start_date,end_date,name):
     df = df.set_index(['Date'])
     parse_dates = df.loc[start_date:end_date + '1']
     print(parse_dates)
-
     #Writing dataframe to csv
     parse_dates.to_csv('health.csv')
+    return parse_dates
 
 exerciseID('2018-07-19','2018-07-21','HeartRate')
 
