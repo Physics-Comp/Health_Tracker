@@ -46,8 +46,8 @@ def dataRange(name):
         if record.get('type') == exerciseID(name):
             creationDate = record.get('creationDate')
             dates.append(creationDate)
-    print('First Date',dates[0])
-    print('Last Date', dates[-1])
+    print('First Date:',dates[0])
+    print('Last Date:', dates[-1])
 
 #Show preliminary data about the specified biometric such as the number of data points and date range. 
 def prelimData(name):
