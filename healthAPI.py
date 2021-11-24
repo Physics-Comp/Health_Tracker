@@ -78,7 +78,7 @@ def prelimData(name):
         assert  exerciseData != lengthOfDiction, "Missing data entries (Warning)"
 
     testElementEqualChild()
-    print("No missind data entries")
+    print("(No missing data entries)")
 
 
 #Extract attributes from record element (Heart Rate in beats per min.)
