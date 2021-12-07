@@ -8,16 +8,16 @@ The basis of this project is to empower users to perform a more in-depth analysi
 ---
 ### Dictionary
 
-The dictionary illustrated below contains key-value pairs of the following biometrics extracted from the Apple Health App. The intention behind this dictionary is to map concise naming conventions to Apple's naming convention type. The dictionary will make sense shortly when using the more concise naming conventions as inputs for the following arguments in our functions.
+The dictionary illustrated below contains key-value pairs of the following biometrics extracted from the Apple Health App. The intention behind this dictionary is to map concise naming conventions to Apple's naming convention type. The dictionary will make sense shortly when using the more concise naming conventions as arguments in our functions.The following table also contains a description column giving a brief description of the biometric and a link containing either a white paper or article from a reputuable instritution (***Eventually all links will be replaced with peer reviewed publications***).
 
 Dictionart Key Chart
 | Key      |Key Value Health Metrics| Description |
 | ----------- | ----------- | ----------- |
-| HeartRate      | HKQuantityTypeIdentifierHeartRate       | Heart rate is the speed of the heartbeat measured by the number of contractions of the heart per minute.|
-| StepCount   | HKQuantityTypeIdentifierStepCount        | Number of flights per day.|
-|WalkingDistance|HKQuantityTypeIdentifierDistanceWalkingRunning| Total distace traveled in a day. |
-|BasalEnergyBurned|HKQuantityTypeIdentifierBasalEnergyBurned| Your BMR (Basal Metabolic Rate) is an estimate of how many calories your body burns at rest. It represents the minimum amount of energy needed to keep your body functioning, including breathing and keeping your heart beating. Your BMR uses up about two-thirds of your daily calories. Your caloric intake to lose, maintain, or gain weight will be based on your BMR, but will not be the same figure. [Basal Metabolic Rate](https://www.sciencedirect.com/topics/medicine-and-dentistry/basal-metabolic-rate)  |
-|FlightsOfStairs|HKQuantityTypeIdentifierFlightsClimbed| Numebr of flights of stairs in a day.  |
+| HeartRate      | HKQuantityTypeIdentifierHeartRate       | Heart rate is the speed of the heartbeat measured by the number of contractions of the heart per minute. [Harvard Health Rate](https://www.health.harvard.edu/heart-health/what-your-heart-rate-is-telling-you)|
+| StepCount   | HKQuantityTypeIdentifierStepCount        | Number of flights per day. [Number of Steps](https://www.nih.gov/news-events/nih-research-matters/number-steps-day-more-important-step-intensity)|
+|WalkingDistance|HKQuantityTypeIdentifierDistanceWalkingRunning| Total distace traveled in a day. [Walking and Running Health](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4067492/)|
+|BasalEnergyBurned|HKQuantityTypeIdentifierBasalEnergyBurned| Your BMR (Basal Metabolic Rate) is an estimate of how many calories your body burns at rest. It represents the minimum amount of energy needed to keep your body functioning, including breathing and keeping your heart beating. [Basal Metabolic Rate](https://www.sciencedirect.com/topics/medicine-and-dentistry/basal-metabolic-rate)  |
+|FlightsOfStairs|HKQuantityTypeIdentifierFlightsClimbed| Numebr of flights of stairs per day.  |
 |ExerciseTime|HKQuantityTypeIdentifierAppleExerciseTime| Total amount of exercise time in a given day.|
 |RestingHeartRate|HKQuantityTypeIdentifierRestingHeartRate| |
 |V02Max|HKQuantityTypeIdentifierVO2Max| |
