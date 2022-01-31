@@ -58,7 +58,7 @@ Note: The following dictionary is likely not all encompassing and therefore inco
 ---
 ### API Functions with Examples
 #### prelimData(): 
-Extract preliminary data from Health API. The prelimData function outputs the number of data entries for a specific health metric (listed in the dictionary above) along with the first and last date for which we have data. The function also has a built-in test case to determine if entries for any particular health metric are missing. To exploit the following function pass health metric as a string argument in prelimData.
+Extract preliminary data from Health API. The prelimData function outputs the number of data entries for a specific health metric (listed in the dictionary above) along with the first and last date for which we have data. The function also has a built-in test case to determine if entries for any particular health metric are missing. To exploit the following function pass health metric as a string argument in prelimData function.
 
 ```python
 prelim = prelimData('Health Metric')
