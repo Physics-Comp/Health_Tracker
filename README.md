@@ -12,9 +12,9 @@ The basis of this project is to empower users to perform a more in-depth analysi
 #### Exporting Apple Health Data
 1. Locate the Health App on iPhone and click on the app.
   <img src="https://user-images.githubusercontent.com/51255104/145128321-472a6b81-9350-4890-b174-970bdd088d74.png" width="250" height='450' title="hover text">
-2. Go to the top right corner of the app and click on your profile then scroll to the bottom and click on export all health data.
+2. Go to the top right corner of the app and click on your profile, then scroll to the bottom and click on export all health data.
   <img src="https://user-images.githubusercontent.com/51255104/145130473-5bcf1fb7-f3f2-402f-9f11-50b820bb1f2a.jpg" width="250" height='550' title="hover text">
-3. After a few minutes you will be prompted with several methods to export the health data. If you have a mac book I would suggest AirDroping the file otherwise you can send it through e-mail (depending on the file size).
+3. After a few minutes you will be prompted with several methods to export your health data. If you have a mac book I would suggest AirDroping the file otherwise you can send it through e-mail (depending on the file size it may not send through e-mail).
   <img src="https://user-images.githubusercontent.com/51255104/145130501-7c123336-d754-41cf-af91-a28670d573d0.jpg" width="250" height='550' title="hover text">
 
 
@@ -42,22 +42,22 @@ Dictionary Key Chart
 |WalkingDoubleSupport|HKQuantityTypeIdentifierWalkingDoubleSupportPercentage| The percentage of time when both feet touch the ground. [Walking Double Support Percentage](https://www.apple.com/ca/healthcare/docs/site/Measuring_Walking_Quality_Through_iPhone_Mobility_Metrics.pdf)  |
 |SixMinWalkingDist|HKQuantityTypeIdentifierSixMinuteWalkTestDistance|The standard six-minute walk test measures the maximum number of meters a user can walk on an unobstructed, flat course. [Six Minute Walk Test](https://erj.ersjournals.com/content/37/1/150)|
 |StandTime|HKQuantityTypeIdentifierAppleStandTime| A quantity sample type that measures the amount of time the user has spent standing. [Standing Time](https://uwaterloo.ca/kinesiology-health-sciences/how-long-should-you-stand-rather-sit-your-work-station)|
-|WalkingSpeed|HKQuantityTypeIdentifierWalkingSpeed|Walking speed represents how quickly the user walks on flat ground.[Walking Speed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4254896/) |
+|WalkingSpeed|HKQuantityTypeIdentifierWalkingSpeed|Walking speed represents how quickly the user walks on flat ground. [Walking Speed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4254896/) |
 |WalkingStepLength|HKQuantityTypeIdentifierWalkingStepLength|The distance between a person's front foot and back foot when they walk. [Walking Step Length](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3299923/) |
-|WalkingAsymmetry|HKQuantityTypeIdentifierWalkingAsymmetryPercentage|Measuring the percentage of steps in which one foot moves at a different speed than the other when walking on flat ground.[Walking Asymmetry Percentage](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/3552086-walkingasymmetrypercentage)|
-|SleepingGoal|HKDataTypeSleepDurationGoal|Records how often you meet sleep goals (Awaiting more documentation)|
-|SleepAnalysis|HKCategoryTypeIdentifierSleepAnalysis|A category sample type for sleep analysis information.[Sleep Analysis (Apple)](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifiersleepanalysis/) |
-|StandHour|HKCategoryTypeIdentifierAppleStandHour|A category sample type that counts the number of hours in the day during which the user has stood and moved for at least one minute per hour.[Stand Hour](https://www.orlandohealth.com/content-hub/why-standing-is-great-exercise)|
-|Meditation|HKCategoryTypeIdentifierMindfulSession|Tracks the duration of mindful practices such as mediation [Mindful Session](https://www.redalyc.org/pdf/560/56017068007.pdf)|
+|WalkingAsymmetry|HKQuantityTypeIdentifierWalkingAsymmetryPercentage|Measuring the percentage of steps in which one foot moves at a different speed than the other when walking on flat ground. [Walking Asymmetry Percentage](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/3552086-walkingasymmetrypercentage)|
+|SleepingGoal|HKDataTypeSleepDurationGoal|Records how often you meet sleep goals. (Awaiting more documentation)|
+|SleepAnalysis|HKCategoryTypeIdentifierSleepAnalysis|A category sample type for sleep analysis information. [Sleep Analysis (Apple)](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifiersleepanalysis/) |
+|StandHour|HKCategoryTypeIdentifierAppleStandHour|A category sample type that counts the number of hours in the day during which the user has stood and moved for at least one minute per hour. [Stand Hour](https://www.orlandohealth.com/content-hub/why-standing-is-great-exercise)|
+|Meditation|HKCategoryTypeIdentifierMindfulSession|Tracks the duration of mindful practices such as mediation. [Mindful Session](https://www.redalyc.org/pdf/560/56017068007.pdf)|
 |HighHeartRate|HKCategoryTypeIdentifierHighHeartRateEvent|Identifies higher than usual heart rates. [High Heart Rate](https://iopscience.iop.org/article/10.1088/0967-3334/25/5/005/meta?casa_token=Gm2hPAtCWF4AAAAA:ajqi3YD-71i6_IdmX60y1D4dQsBjXUcZ9kOrm2Bcru1Gf5R6NTyLxyymDly-VSb8dGUClujt703Ycw5CQQ)|
-|LowHeartRate|HKCategoryTypeIdentifierLowHeartRateEvent|A category sample type for low heart rate events.[Low Heart Rate Event](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifierlowheartrateevent/) |
+|LowHeartRate|HKCategoryTypeIdentifierLowHeartRateEvent|A category sample type for low heart rate events. [Low Heart Rate Event](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifierlowheartrateevent/) |
 |HeartRateVarSDNN|HKQuantityTypeIdentifierHeartRateVariabilitySDNN|A quantity sample type that measures the standard deviation of heartbeat intervals. [Heart Rate Variablity SDNN](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifierheartratevariabilitysdnn/) |
 
 Note: The following dictionary is likely not all encompassing and therefore incomplete. 
 
 ---
 ### API Functions with Examples
-#### prelimData(): 
+#### ```prelimData(): ```
 Extract preliminary data from Health API. The prelimData function outputs the number of data entries for a specific health metric (listed in the dictionary above) along with the first and last date for which we have data. The function also has a built-in test case to determine if entries for any particular health metric are missing. To exploit the following function pass health metric as a string argument in prelimData function.
 
 ```python
@@ -81,7 +81,7 @@ Last Date: 2018-07-19 21:43:49 -0600
 (No missing data entries)
 ```
 
-#### exerciseData():
+#### ```exerciseData():```
 Create a pandas data frame for a particular health metric listing the date range and data entries. To exploit the function pass first date as the first argument, end date as the second argument, and health metric as the third argument as shown in the example below. 
 
 ```python
@@ -138,3 +138,5 @@ Date
 2018-07-19 21:43:44 -0600                   71
 2018-07-19 21:43:49 -0600                   74
 ```
+
+(Incomplete Function List)
