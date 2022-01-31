@@ -54,3 +54,87 @@ Dictionary Key Chart
 |HeartRateVarSDNN|HKQuantityTypeIdentifierHeartRateVariabilitySDNN|A quantity sample type that measures the standard deviation of heartbeat intervals. [Heart Rate Variablity SDNN](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifierheartratevariabilitysdnn/) |
 
 Note: The following dictionary is likely not all encompassing and therefore incomplete. 
+
+---
+### API Functions with Examples
+#### prelimData(): 
+Extract preliminary data from Health API. The prelimData function outputs the number of data entries for a specific health metric (listed in the dictionary above) along with the first and last date for which we have data. The function also has a built-in test case to determine if entries for any particular health metric are missing. To exploit the following function pass health metric as a string argument in prelimData.
+
+```python
+prelim = prelimData('Health Metric')
+```
+
+Example: Extracting preliminart data for heart rate
+
+```python
+#Extract preliminart data
+prelim = prelimData('HeartRate')
+```
+
+Output:
+```
+Preliminary HeartRate Data
+--------------------------------------
+The number of entries for HeartRate: 34
+First Date: 2018-07-19 19:00:36 -0600
+Last Date: 2018-07-19 21:43:49 -0600
+(No missing data entries)
+```
+
+#### exerciseData():
+Create a pandas data frame for a particular health metric listing the date range and data entries. To exploit the function pass first date as the first argument, end date as the second argument, and health metric as the third argument as shown in the example below. 
+
+```python
+#Create a pandas datafram for hearth rate
+exerciseData("first date","end date",'Health Metric')
+```
+
+Example: Extract heart rate data for 2018-07-19
+
+```python
+#Create a pandas datafram for hearth rate
+data = exerciseData("2018-07-19","2018-07-21",'HeartRate')
+print(data)
+```
+
+Output:
+
+```
+Type: HKQuantityTypeIdentifierHeartRate
+                          Heart Rate:count/min
+Date                                          
+2018-07-19 19:00:36 -0600                   63
+2018-07-19 19:15:20 -0600                   92
+2018-07-19 19:20:57 -0600                   64
+2018-07-19 19:26:14 -0600                   90
+2018-07-19 19:43:12 -0600                   88
+2018-07-19 19:47:14 -0600                   77
+2018-07-19 19:51:40 -0600                   74
+2018-07-19 19:58:33 -0600                   70
+2018-07-19 20:00:31 -0600                   73
+2018-07-19 20:05:31 -0600                   74
+2018-07-19 20:12:42 -0600                   76
+2018-07-19 20:19:35 -0600                   78
+2018-07-19 20:21:22 -0600                   70
+2018-07-19 20:27:57 -0600                   79
+2018-07-19 20:32:57 -0600                   71
+2018-07-19 20:35:17 -0600                   74
+2018-07-19 20:35:53 -0600                   62
+2018-07-19 20:49:19 -0600                   59
+2018-07-19 20:52:50 -0600                   69
+2018-07-19 20:57:01 -0600                   72
+2018-07-19 21:01:11 -0600                   86
+2018-07-19 21:07:14 -0600                   89
+2018-07-19 21:11:00 -0600                   78
+2018-07-19 21:15:20 -0600                   61
+2018-07-19 21:22:27 -0600                   70
+2018-07-19 21:33:54 -0600                   72
+2018-07-19 21:36:47 -0600                   76
+2018-07-19 21:37:40 -0600              68.0132
+2018-07-19 21:40:41 -0600                   73
+2018-07-19 21:43:29 -0600                   68
+2018-07-19 21:43:34 -0600                   68
+2018-07-19 21:43:39 -0600                   71
+2018-07-19 21:43:44 -0600                   71
+2018-07-19 21:43:49 -0600                   74
+```
