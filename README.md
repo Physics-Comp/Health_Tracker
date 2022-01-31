@@ -45,11 +45,11 @@ Dictionary Key Chart
 |WalkingSpeed|HKQuantityTypeIdentifierWalkingSpeed|Walking speed represents how quickly the user walks on flat ground.[Walking Speed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4254896/) |
 |WalkingStepLength|HKQuantityTypeIdentifierWalkingStepLength|The distance between a person's front foot and back foot when they walk. [Walking Step Length](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3299923/) |
 |WalkingAsymmetry|HKQuantityTypeIdentifierWalkingAsymmetryPercentage|Measuring the percentage of steps in which one foot moves at a different speed than the other when walking on flat ground.[Walking Asymmetry Percentage](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/3552086-walkingasymmetrypercentage)|
-|SleepingGoal|HKDataTypeSleepDurationGoal| |
-|SleepAnalysis|HKCategoryTypeIdentifierSleepAnalysis| |
-|StandHour|HKCategoryTypeIdentifierAppleStandHour| |
-|Meditation|HKCategoryTypeIdentifierMindfulSession| |
-|HighHeartRate|HKCategoryTypeIdentifierHighHeartRateEvent| |
+|SleepingGoal|HKDataTypeSleepDurationGoal|Records how often you meet sleep goals (Awaiting more documentation)|
+|SleepAnalysis|HKCategoryTypeIdentifierSleepAnalysis|A category sample type for sleep analysis information.[Sleep Analysis (Apple)](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifiersleepanalysis/) |
+|StandHour|HKCategoryTypeIdentifierAppleStandHour|A category sample type that counts the number of hours in the day during which the user has stood and moved for at least one minute per hour.[Stand Hour](https://www.orlandohealth.com/content-hub/why-standing-is-great-exercise)|
+|Meditation|HKCategoryTypeIdentifierMindfulSession|Tracks the duration of mindful practices such as mediation [Mindful Session](https://www.redalyc.org/pdf/560/56017068007.pdf)|
+|HighHeartRate|HKCategoryTypeIdentifierHighHeartRateEvent|Identifies higher than usual heart rates. [High Heart Rate](https://iopscience.iop.org/article/10.1088/0967-3334/25/5/005/meta?casa_token=Gm2hPAtCWF4AAAAA:ajqi3YD-71i6_IdmX60y1D4dQsBjXUcZ9kOrm2Bcru1Gf5R6NTyLxyymDly-VSb8dGUClujt703Ycw5CQQ)|
 |LowHeartRate|HKCategoryTypeIdentifierLowHeartRateEvent| |
 |HeartRateVarSDNN|HKQuantityTypeIdentifierHeartRateVariabilitySDNN| |
 
