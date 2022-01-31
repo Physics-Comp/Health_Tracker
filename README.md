@@ -3,7 +3,7 @@
 
  ### Introduction
  
-The basis of this project is to empower users to perform a more in-depth analysis of their health metrics. Comprehensive analysis of health metrics will enable individuals to make more health-conscious decisions, leading to better physical longevity and mental health. The end goal of this project is to use a suite of apps from which to extract data physical, mental, and nutritional metrics and perform cross correlative analysis in each of these categories. Hopefully, utilizing the Health Tracker API, we can make insightful conclusions regarding an individual's health status leading to better preventative care and overall well-being.
+The basis of this project is to empower users to perform a more in-depth analysis of their health metrics. Comprehensive analysis of health metrics will enable individuals to make more health-conscious decisions, leading to better physical longevity and mental health. The end goal of this project is to use a suite of apps from which to extract physical, mental, and nutritional metrics and perform cross correlative analysis in each of these categories. Hopefully, utilizing the Health Tracker API, we can make insightful conclusions regarding an individual's health status leading to better preventative care and overall well-being.
 
 ---
 
@@ -50,7 +50,7 @@ Dictionary Key Chart
 |StandHour|HKCategoryTypeIdentifierAppleStandHour|A category sample type that counts the number of hours in the day during which the user has stood and moved for at least one minute per hour.[Stand Hour](https://www.orlandohealth.com/content-hub/why-standing-is-great-exercise)|
 |Meditation|HKCategoryTypeIdentifierMindfulSession|Tracks the duration of mindful practices such as mediation [Mindful Session](https://www.redalyc.org/pdf/560/56017068007.pdf)|
 |HighHeartRate|HKCategoryTypeIdentifierHighHeartRateEvent|Identifies higher than usual heart rates. [High Heart Rate](https://iopscience.iop.org/article/10.1088/0967-3334/25/5/005/meta?casa_token=Gm2hPAtCWF4AAAAA:ajqi3YD-71i6_IdmX60y1D4dQsBjXUcZ9kOrm2Bcru1Gf5R6NTyLxyymDly-VSb8dGUClujt703Ycw5CQQ)|
-|LowHeartRate|HKCategoryTypeIdentifierLowHeartRateEvent| |
-|HeartRateVarSDNN|HKQuantityTypeIdentifierHeartRateVariabilitySDNN| |
+|LowHeartRate|HKCategoryTypeIdentifierLowHeartRateEvent|A category sample type for low heart rate events.[Low Heart Rate Event](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifierlowheartrateevent/) |
+|HeartRateVarSDNN|HKQuantityTypeIdentifierHeartRateVariabilitySDNN|A quantity sample type that measures the standard deviation of heartbeat intervals. [Heart Rate Variablity SDNN](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifierheartratevariabilitysdnn/) |
 
 Note: The following dictionary is likely not all encompassing and therefore incomplete. 
