@@ -24,7 +24,7 @@ The basis of this project is to empower users to perform a more in-depth analysi
 ---
 ### Dictionary
 
-The dictionary illustrated below contains key-value pairs of the following biometrics extracted from the Apple Health App. The intention behind this dictionary is to map concise naming conventions to Apple's naming convention type. The dictionary will make sense shortly when using the more concise naming conventions as arguments in our functions. The following table also contains a description column giving a brief description of the biometric and a link containing either a white paper or article from a reputuable instritution (***Eventually all links will be replaced with peer reviewed publications***).
+The dictionary illustrated below contains key-value pairs of the following biometrics extracted from the Apple Health App. The intention behind this dictionary is to map concise naming conventions to Apple's naming convention type. The dictionary will make sense shortly when using the more practical naming conventions as arguments in our functions. The following table also contains a description column giving a brief description of the biometric and a link containing either a white paper or article from a reputable institution (***Eventually all links will be replaced with peer-reviewed publications***).
 
 Dictionary Key Chart
 | Key      |Key Value Health Metrics| Description |
