@@ -82,7 +82,7 @@ Last Date: 2018-07-19 21:43:49 -0600
 ```
 
 #### ```exerciseData():```
-Create a pandas data frame for a particular health metric listing the date range and data entries. To exploit the function pass first date as the first argument, end date as the second argument, and health metric as the third argument as shown in the example below. 
+Create a pandas data frame for a particular health metric listing the date range and data entries. To exploit the function pass 'first date' as the first argument, 'end date' as the second argument, and 'health metric' as the third argument as shown in the example below. 
 
 ```python
 #Create a pandas datafram for hearth rate
@@ -92,7 +92,7 @@ exerciseData("first date","end date",'Health Metric')
 Example: Extract heart rate data for 2018-07-19
 
 ```python
-#Create a pandas datafram for hearth rate
+#Create a pandas dataframe for hearth rate
 data = exerciseData("2018-07-19","2018-07-21",'HeartRate')
 print(data)
 ```
