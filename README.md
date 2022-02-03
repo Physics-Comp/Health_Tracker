@@ -3,18 +3,18 @@
 
  ### Introduction
  
-The basis of this project is to empower users to perform a more in-depth analysis of their health metrics. Comprehensive analysis of health metrics will enable individuals to make more health-conscious decisions, leading to better physical longevity and mental health. The end goal of this project is to use a suite of apps from which to extract physical, mental, and nutritional metrics and perform cross correlative analysis in each of these categories. Hopefully, utilizing the Health Tracker API, we can make insightful conclusions regarding an individual's health status leading to better preventative care and overall well-being.
+The basis of this project is to empower users to perform a more in-depth analysis of their health metrics. Comprehensive analysis of health metrics will enable individuals to make more health-conscious decisions, leading to better physical longevity and mental health. The end goal of this project is to use a suite of apps from which to extract physical, mental, and nutritional metrics and perform cross correlative analysis in each of these categories. Hopefully, utilizing the Health Tracker API, we can make insightful conclusions regarding an individual's health status leading to better preventative care and overall well-being. ***(Currently Supported for Apple Watch and Apple Products)***
 
 ---
 
-### Getting Setup
+### Getting Setup (Apple Watch)
 
 #### Exporting Apple Health Data
 1. Locate the Health App on iPhone and click on the app.
   <img src="https://user-images.githubusercontent.com/51255104/145128321-472a6b81-9350-4890-b174-970bdd088d74.png" width="250" height='450' title="hover text">
 2. Go to the top right corner of the app and click on your profile, then scroll to the bottom and click on export all health data.
   <img src="https://user-images.githubusercontent.com/51255104/145130473-5bcf1fb7-f3f2-402f-9f11-50b820bb1f2a.jpg" width="250" height='550' title="hover text">
-3. After a few minutes you will be prompted with several methods to export your health data. If you have a mac book I would suggest AirDroping the file otherwise you can send it through e-mail (depending on the file size it may not send through e-mail).
+3. After a few minutes you will be prompted with several methods to export your health data. If you have a mac book I would suggest AirDroping the file, otherwise you can send it through e-mail (depending on the file size it may not send through e-mail).
   <img src="https://user-images.githubusercontent.com/51255104/145130501-7c123336-d754-41cf-af91-a28670d573d0.jpg" width="250" height='550' title="hover text">
 
 
@@ -58,7 +58,7 @@ Note: The following dictionary is likely not all encompassing and therefore inco
 ---
 ### API Functions with Examples
 #### ```prelimData(): ```
-Extract preliminary data from Health API. The prelimData function outputs the number of data entries for a specific health metric (listed in the dictionary above) along with the first and last date for which we have data. The function also has a built-in test case to determine if entries for any particular health metric are missing. To exploit the following function pass health metric as a string argument in prelimData function.
+Extract preliminary data from Health API. The prelimData function outputs the number of data entries for a specific health metric (listed in the dictionary above) along with the first and last date for which we have data. The function also has a built-in test case to determine if entries for any particular health metric are missing. To exploit the following function pass a health metric (listed in the dictionary above) as a string argument in ```prelimData()``` function.
 
 ```python
 prelim = prelimData('Health Metric')
@@ -82,17 +82,17 @@ Last Date: 2018-07-19 21:43:49 -0600
 ```
 
 #### ```exerciseData():```
-Create a pandas data frame for a particular health metric listing the date range and data entries. To exploit the function pass first date as the first argument, end date as the second argument, and health metric as the third argument as shown in the example below. 
+Create a pandas data frame for a particular health metric listing the date range and data entries. To exploit the function pass 'first date' as the first argument, 'end date' as the second argument, and 'health metric' as the third argument as shown in the example below. 
 
 ```python
-#Create a pandas datafram for hearth rate
+#Create a pandas data frame for heart rate
 exerciseData("first date","end date",'Health Metric')
 ```
 
 Example: Extract heart rate data for 2018-07-19
 
 ```python
-#Create a pandas datafram for hearth rate
+#Create a pandas dataf rame for heart rate
 data = exerciseData("2018-07-19","2018-07-21",'HeartRate')
 print(data)
 ```
@@ -139,4 +139,4 @@ Date
 2018-07-19 21:43:49 -0600                   74
 ```
 
-(Incomplete Function List)
+(More Functions to Come)
