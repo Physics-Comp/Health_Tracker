@@ -58,7 +58,7 @@ Note: The following dictionary is likely not all encompassing and therefore inco
 ---
 ### API Functions with Examples
 #### ```prelimData(): ```
-Extract preliminary data from Health API. The prelimData function outputs the number of data entries for a specific health metric (listed in the dictionary above) along with the first and last date for which we have data. The function also has a built-in test case to determine if entries for any particular health metric are missing. To exploit the following function pass a health metric (listed in the dictionary above) as a string argument in prelimData() function.
+Extract preliminary data from Health API. The prelimData function outputs the number of data entries for a specific health metric (listed in the dictionary above) along with the first and last date for which we have data. The function also has a built-in test case to determine if entries for any particular health metric are missing. To exploit the following function pass a health metric (listed in the dictionary above) as a string argument in ```prelimData()``` function.
 
 ```python
 prelim = prelimData('Health Metric')
@@ -85,14 +85,14 @@ Last Date: 2018-07-19 21:43:49 -0600
 Create a pandas data frame for a particular health metric listing the date range and data entries. To exploit the function pass 'first date' as the first argument, 'end date' as the second argument, and 'health metric' as the third argument as shown in the example below. 
 
 ```python
-#Create a pandas datafram for hearth rate
+#Create a pandas data frame for hearth rate
 exerciseData("first date","end date",'Health Metric')
 ```
 
 Example: Extract heart rate data for 2018-07-19
 
 ```python
-#Create a pandas dataframe for hearth rate
+#Create a pandas dataf rame for hearth rate
 data = exerciseData("2018-07-19","2018-07-21",'HeartRate')
 print(data)
 ```
