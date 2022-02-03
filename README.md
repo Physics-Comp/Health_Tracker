@@ -139,4 +139,4 @@ Date
 2018-07-19 21:43:49 -0600                   74
 ```
 
-(Incomplete Function List)
+(More Functions to Come)
