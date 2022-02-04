@@ -3,18 +3,18 @@
 
  ### Introduction
  
-The basis of this project is to empower users to perform a more in-depth analysis of their health metrics. Comprehensive analysis of health metrics will enable individuals to make more health-conscious decisions, leading to better physical longevity and mental health. The end goal of this project is to use a suite of apps from which to extract data physical, mental, and nutritional metrics and perform cross correlative analysis in each of these categories. Hopefully, utilizing the Health Tracker API, we can make insightful conclusions regarding an individual's health status leading to better preventative care and overall well-being.
+The basis of this project is to empower users to perform a more in-depth analysis of their health metrics. Comprehensive analysis of health metrics will enable individuals to make more health-conscious decisions, leading to better physical longevity and mental health. The end goal of this project is to use a suite of apps from which to extract physical, mental, and nutritional metrics and perform cross correlative analysis in each of these categories. Hopefully, utilizing the Health Tracker API, we can make insightful conclusions regarding an individual's health status leading to better preventative care and overall well-being. ***(Currently Supported for Apple Watch and Apple Products)***
 
 ---
 
-### Getting Setup
+### Getting Setup (Apple Watch)
 
 #### Exporting Apple Health Data
 1. Locate the Health App on iPhone and click on the app.
   <img src="https://user-images.githubusercontent.com/51255104/145128321-472a6b81-9350-4890-b174-970bdd088d74.png" width="250" height='450' title="hover text">
-2. Go to the top right corner of the app and click on your profile then scroll to the bottom and click on export all health data.
+2. Go to the top right corner of the app and click on your profile, then scroll to the bottom and click on export all health data.
   <img src="https://user-images.githubusercontent.com/51255104/145130473-5bcf1fb7-f3f2-402f-9f11-50b820bb1f2a.jpg" width="250" height='550' title="hover text">
-3. After a few minutes you will be prompted with several methods to export the health data. If you have a mac book I would suggest AirDroping the file otherwise you can send it through e-mail (depending on the file size).
+3. After a few minutes you will be prompted with several methods to export your health data. If you have a mac book I would suggest AirDroping the file, otherwise you can send it through e-mail (depending on the file size it may not send through e-mail).
   <img src="https://user-images.githubusercontent.com/51255104/145130501-7c123336-d754-41cf-af91-a28670d573d0.jpg" width="250" height='550' title="hover text">
 
 
@@ -24,7 +24,7 @@ The basis of this project is to empower users to perform a more in-depth analysi
 ---
 ### Dictionary
 
-The dictionary illustrated below contains key-value pairs of the following biometrics extracted from the Apple Health App. The intention behind this dictionary is to map concise naming conventions to Apple's naming convention type. The dictionary will make sense shortly when using the more concise naming conventions as arguments in our functions. The following table also contains a description column giving a brief description of the biometric and a link containing either a white paper or article from a reputuable instritution (***Eventually all links will be replaced with peer reviewed publications***).
+The dictionary illustrated below contains key-value pairs of the following biometrics extracted from the Apple Health App. The intention behind this dictionary is to map concise naming conventions to Apple's naming convention type. The dictionary will make sense shortly when using the more practical naming conventions as arguments in our functions. The following table also contains a description column giving a brief description of the biometric and a link containing either a white paper or article from a reputable institution (***Eventually all links will be replaced with peer-reviewed publications***).
 
 Dictionary Key Chart
 | Key      |Key Value Health Metrics| Description |
@@ -42,15 +42,101 @@ Dictionary Key Chart
 |WalkingDoubleSupport|HKQuantityTypeIdentifierWalkingDoubleSupportPercentage| The percentage of time when both feet touch the ground. [Walking Double Support Percentage](https://www.apple.com/ca/healthcare/docs/site/Measuring_Walking_Quality_Through_iPhone_Mobility_Metrics.pdf)  |
 |SixMinWalkingDist|HKQuantityTypeIdentifierSixMinuteWalkTestDistance|The standard six-minute walk test measures the maximum number of meters a user can walk on an unobstructed, flat course. [Six Minute Walk Test](https://erj.ersjournals.com/content/37/1/150)|
 |StandTime|HKQuantityTypeIdentifierAppleStandTime| A quantity sample type that measures the amount of time the user has spent standing. [Standing Time](https://uwaterloo.ca/kinesiology-health-sciences/how-long-should-you-stand-rather-sit-your-work-station)|
-|WalkingSpeed|HKQuantityTypeIdentifierWalkingSpeed|Walking speed represents how quickly the user walks on flat ground.[Walking Speed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4254896/) |
+|WalkingSpeed|HKQuantityTypeIdentifierWalkingSpeed|Walking speed represents how quickly the user walks on flat ground. [Walking Speed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4254896/) |
 |WalkingStepLength|HKQuantityTypeIdentifierWalkingStepLength|The distance between a person's front foot and back foot when they walk. [Walking Step Length](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3299923/) |
-|WalkingAsymmetry|HKQuantityTypeIdentifierWalkingAsymmetryPercentage|Measuring the percentage of steps in which one foot moves at a different speed than the other when walking on flat ground.[Walking Asymmetry Percentage](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/3552086-walkingasymmetrypercentage)|
-|SleepingGoal|HKDataTypeSleepDurationGoal| |
-|SleepAnalysis|HKCategoryTypeIdentifierSleepAnalysis| |
-|StandHour|HKCategoryTypeIdentifierAppleStandHour| |
-|Meditation|HKCategoryTypeIdentifierMindfulSession| |
-|HighHeartRate|HKCategoryTypeIdentifierHighHeartRateEvent| |
-|LowHeartRate|HKCategoryTypeIdentifierLowHeartRateEvent| |
-|HeartRateVarSDNN|HKQuantityTypeIdentifierHeartRateVariabilitySDNN| |
+|WalkingAsymmetry|HKQuantityTypeIdentifierWalkingAsymmetryPercentage|Measuring the percentage of steps in which one foot moves at a different speed than the other when walking on flat ground. [Walking Asymmetry Percentage](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/3552086-walkingasymmetrypercentage)|
+|SleepingGoal|HKDataTypeSleepDurationGoal|Records how often you meet sleep goals. (Awaiting more documentation)|
+|SleepAnalysis|HKCategoryTypeIdentifierSleepAnalysis|A category sample type for sleep analysis information. [Sleep Analysis (Apple)](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifiersleepanalysis/) |
+|StandHour|HKCategoryTypeIdentifierAppleStandHour|A category sample type that counts the number of hours in the day during which the user has stood and moved for at least one minute per hour. [Stand Hour](https://www.orlandohealth.com/content-hub/why-standing-is-great-exercise)|
+|Meditation|HKCategoryTypeIdentifierMindfulSession|Tracks the duration of mindful practices such as mediation. [Mindful Session](https://www.redalyc.org/pdf/560/56017068007.pdf)|
+|HighHeartRate|HKCategoryTypeIdentifierHighHeartRateEvent|Identifies higher than usual heart rates. [High Heart Rate](https://iopscience.iop.org/article/10.1088/0967-3334/25/5/005/meta?casa_token=Gm2hPAtCWF4AAAAA:ajqi3YD-71i6_IdmX60y1D4dQsBjXUcZ9kOrm2Bcru1Gf5R6NTyLxyymDly-VSb8dGUClujt703Ycw5CQQ)|
+|LowHeartRate|HKCategoryTypeIdentifierLowHeartRateEvent|A category sample type for low heart rate events. [Low Heart Rate Event](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifierlowheartrateevent/) |
+|HeartRateVarSDNN|HKQuantityTypeIdentifierHeartRateVariabilitySDNN|A quantity sample type that measures the standard deviation of heartbeat intervals. [Heart Rate Variablity SDNN](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifierheartratevariabilitysdnn/) |
 
 Note: The following dictionary is likely not all encompassing and therefore incomplete. 
+
+---
+### API Functions with Examples
+#### ```prelimData(): ```
+Extract preliminary data from Health API. The prelimData function outputs the number of data entries for a specific health metric (listed in the dictionary above) along with the first and last date for which we have data. The function also has a built-in test case to determine if entries for any particular health metric are missing. To exploit the following function pass a health metric (listed in the dictionary above) as a string argument in ```prelimData()``` function.
+
+```python
+prelim = prelimData('Health Metric')
+```
+
+Example: Extracting preliminart data for heart rate
+
+```python
+#Extract preliminart data
+prelim = prelimData('HeartRate')
+```
+
+Output:
+```
+Preliminary HeartRate Data
+--------------------------------------
+The number of entries for HeartRate: 34
+First Date: 2018-07-19 19:00:36 -0600
+Last Date: 2018-07-19 21:43:49 -0600
+(No missing data entries)
+```
+
+#### ```exerciseData():```
+Create a pandas data frame for a particular health metric listing the date range and data entries. To exploit the function pass 'first date' as the first argument, 'end date' as the second argument, and 'health metric' as the third argument as shown in the example below. 
+
+```python
+#Create a pandas data frame for heart rate
+exerciseData("first date","end date",'Health Metric')
+```
+
+Example: Extract heart rate data for 2018-07-19
+
+```python
+#Create a pandas dataf rame for heart rate
+data = exerciseData("2018-07-19","2018-07-21",'HeartRate')
+print(data)
+```
+
+Output:
+
+```
+Type: HKQuantityTypeIdentifierHeartRate
+                          Heart Rate:count/min
+Date                                          
+2018-07-19 19:00:36 -0600                   63
+2018-07-19 19:15:20 -0600                   92
+2018-07-19 19:20:57 -0600                   64
+2018-07-19 19:26:14 -0600                   90
+2018-07-19 19:43:12 -0600                   88
+2018-07-19 19:47:14 -0600                   77
+2018-07-19 19:51:40 -0600                   74
+2018-07-19 19:58:33 -0600                   70
+2018-07-19 20:00:31 -0600                   73
+2018-07-19 20:05:31 -0600                   74
+2018-07-19 20:12:42 -0600                   76
+2018-07-19 20:19:35 -0600                   78
+2018-07-19 20:21:22 -0600                   70
+2018-07-19 20:27:57 -0600                   79
+2018-07-19 20:32:57 -0600                   71
+2018-07-19 20:35:17 -0600                   74
+2018-07-19 20:35:53 -0600                   62
+2018-07-19 20:49:19 -0600                   59
+2018-07-19 20:52:50 -0600                   69
+2018-07-19 20:57:01 -0600                   72
+2018-07-19 21:01:11 -0600                   86
+2018-07-19 21:07:14 -0600                   89
+2018-07-19 21:11:00 -0600                   78
+2018-07-19 21:15:20 -0600                   61
+2018-07-19 21:22:27 -0600                   70
+2018-07-19 21:33:54 -0600                   72
+2018-07-19 21:36:47 -0600                   76
+2018-07-19 21:37:40 -0600              68.0132
+2018-07-19 21:40:41 -0600                   73
+2018-07-19 21:43:29 -0600                   68
+2018-07-19 21:43:34 -0600                   68
+2018-07-19 21:43:39 -0600                   71
+2018-07-19 21:43:44 -0600                   71
+2018-07-19 21:43:49 -0600                   74
+```
+
+(More Functions to Come)

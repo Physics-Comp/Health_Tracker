@@ -61,7 +61,7 @@ def prelimData(name):
             value = record.get('value')
             exerciseData.append(value)
     lengthOfDataEntries = len(exerciseData)
-    print('The number of entries for',lengthOfDataEntries)
+    print('The number of entries:',lengthOfDataEntries)
 
     #Display the number of attributes within each element
     numDict = []
@@ -88,7 +88,7 @@ def exerciseData(start_date,end_date,name):
     heartRate = [] #Numerical Heart Rate 
     timeOfEntry = [] #Date of heart rate record
 
-    #Extract values for heart rate and time
+    #Extract values for heart rate sudo apt-get updateand time
     for record in root.findall('Record'):
         if record.get('type') == exerciseID(name):
             unit = record.get('unit') #Units of heart rate
