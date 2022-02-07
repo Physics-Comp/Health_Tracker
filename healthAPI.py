@@ -6,6 +6,14 @@ root = tree.getroot()
 
 #Dictionary for filtering through data set
 def exerciseID (name):
+    """
+    exerciseID is a function containing a dictionary that converts Apple's naming convention to a more condenced naming convention.
+
+    The function contains the following syntax, exerciseID('Health Metric')
+
+    Ex.
+    exerciseID('HeartRate')
+    """
     exerciseDict = {
         "HeartRate": "HKQuantityTypeIdentifierHeartRate",
         "StepCount": "HKQuantityTypeIdentifierStepCount",
@@ -40,6 +48,14 @@ def exerciseID (name):
     return exerciseDict[name]
 
 #Determine the date range (Use excerciseID function to obtain data_type)
+"""
+Extracts the date range of a given biometric. The argument in the function should be the biometric of interest.
+
+Ex.
+dataRange('HeartRate')
+
+Note: In order to use the condenced naming conventions you must call the exerciseID function.
+"""
 def dataRange(name):
     dates = []
     for record in root.findall('Record'):
@@ -49,7 +65,8 @@ def dataRange(name):
     print('First Date:',dates[0])
     print('Last Date:', dates[-1])
 
-#Show preliminary data about the specified biometric such as the number of data points and date range. 
+#Show preliminary data about the specified biometric such as the number of data points and date range.
+
 def prelimData(name):
     print('Preliminary',name,'Data')
     print('--------------------------------------')
@@ -82,6 +99,10 @@ def prelimData(name):
 
 
 #Extract attributes from record element (Heart Rate in beats per min.)
+"""
+
+
+"""
 def exerciseData(start_date,end_date,name):
     columns = []
     rows = []
