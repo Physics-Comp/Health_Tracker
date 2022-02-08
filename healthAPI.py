@@ -98,32 +98,35 @@ def prelimData(name):
     print("(No missing data entries)")
 
 
-#Extract attributes from record element (Heart Rate in beats per min.)
-"""
-
-
-"""
+#Extract attributes from record element
 def exerciseData(start_date,end_date,name):
+    """
+    Create a pandas dataframe of a given health metric listing two columns containing the dates and measured values.
+
+    Documentation: exerciseData('start date','end date','health metric')
+
+    Ex. exerciseData("2018-07-19","2018-07-21",'HeartRate')
+    """
     columns = []
     rows = []
-    heartRate = [] #Numerical Heart Rate 
-    timeOfEntry = [] #Date of heart rate record
+    measurment = [] #Measured values of health metric
+    timeOfEntry = [] #Date 
 
-    #Extract values for heart rate sudo apt-get updateand time
+    #Extract values for specified health metric
     for record in root.findall('Record'):
         if record.get('type') == exerciseID(name):
-            unit = record.get('unit') #Units of heart rate
-            value = record.get('value') #Value of heart rate
+            unit = record.get('unit') #Units 
+            value = record.get('value') #Values
             creationDate = record.get('creationDate') #Date recorded
-            heartRate.append(value) #Append value (count/min)
+            measurment.append(value) #Append value (count/min)
             timeOfEntry.append(creationDate) #Append creation dates to the Dates
-    print("Type:", exerciseID(name))
+    print("Type:", exerciseID(name)) #Output name of health biometric
     columns.append('Heart Rate:' + unit)
     columns.append('Date')
     
     # Convert XML into CSV utilizing Pandas
-    for i in range(len(heartRate)):
-        rows.append({columns[0]:heartRate[i],columns[1]:timeOfEntry[i]})
+    for i in range(len(measurment)):
+        rows.append({columns[0]:measurment[i],columns[1]:timeOfEntry[i]})
 
     # Create the pandas dataframe
     df = pd.DataFrame(rows,columns = columns)
@@ -131,7 +134,6 @@ def exerciseData(start_date,end_date,name):
     #Parse data by dates
     df = df.set_index(['Date'])
     exercise_data = df.loc[start_date:end_date]
-    
     
     #Return dataframe 
     return exercise_data
