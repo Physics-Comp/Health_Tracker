@@ -68,6 +68,13 @@ def dataRange(name):
 #Show preliminary data about the specified biometric such as the number of data points and date range.
 
 def prelimData(name):
+    """
+    Gives a general description of the biometric data given a particular health metric. The following information should be given
+    1.) Name of the health metric
+    2.) First date the particular health metric was recoreded
+    3.) Last recorded date of the specified health metric
+    4.) Test case that checks if there are any missing data entries in the dataset
+    """
     print('Preliminary',name,'Data')
     print('--------------------------------------')
     
