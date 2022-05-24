@@ -145,7 +145,7 @@ def exerciseData(start_date,end_date,name):
     #Return dataframe 
     return exercise_data
 
-    #Determine fitness based on resting heart rate
+#Determine fitness based on resting heart rate
 def health_status_resting_heart_rate(age,restingHeart):
     """
     We are going to define a series of lists containing tuples associated with health
