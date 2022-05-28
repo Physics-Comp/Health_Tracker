@@ -1,13 +1,19 @@
 #Import API to parse XML data
 import xml.etree.ElementTree as ET
 import pandas as pd
+
+from healthAPI import exerciseID
 tree = ET.parse("datasubset.xml")
 root = tree.getroot()
 
 
 class Anlaysis:
+#Constructor
+    def __init__(self,name):
+        self.name = name
+
 #Dictionary for filtering through data set
-    def exerciseID (name):
+    def exerciseID (self,name):
         """
         exerciseID is a function containing a dictionary that converts Apple's naming convention to a more condenced naming convention.
 
@@ -16,7 +22,7 @@ class Anlaysis:
         Ex.
         exerciseID('HeartRate')
         """
-        exerciseDict = {
+        self.exerciseDict = {
             "HeartRate": "HKQuantityTypeIdentifierHeartRate",
             "StepCount": "HKQuantityTypeIdentifierStepCount",
             "Distance" : "HKQuantityTypeIdentifierDistanceWalkingRunning",
@@ -44,10 +50,10 @@ class Anlaysis:
         }
         # Test case to see if key is in dictionary
         def testKeyInDict(): 
-            assert name in exerciseDict, "Key not found in dictionary"
+            assert self.name in self.exerciseDict, "Key not found in dictionary"
 
         testKeyInDict()
-        return exerciseDict[name]
+        return self.exerciseDict[name]
 
     #Determine the date range (Use excerciseID function to obtain data_type)
     """
@@ -58,10 +64,10 @@ class Anlaysis:
 
     Note: In order to use the condenced naming conventions you must call the exerciseID function.
     """
-    def dataRange(name):
+    def dataRange(self,name):
         dates = []
         for record in root.findall('Record'):
-            if record.get('type') == exerciseID(name):
+            if record.get('type') == self.exerciseID(name):
                 creationDate = record.get('creationDate')
                 dates.append(creationDate)
         print('First Date:',dates[0])
@@ -69,7 +75,7 @@ class Anlaysis:
 
     #Show preliminary data about the specified biometric such as the number of data points and date range.
 
-    def prelimData(name):
+    def prelimData(self,name):
         """
         Gives a general description of the biometric data given a particular health metric. The following information should be given
         1.) Name of the health metric
@@ -77,13 +83,13 @@ class Anlaysis:
         3.) Last recorded date of the specified health metric
         4.) Test case that checks if there are any missing data entries in the dataset
         """
-        print('Preliminary',name,'Data')
+        print('Preliminary',self.name,'Data')
         print('--------------------------------------')
         
         #Number of child elements in root 
         exerciseData = []
         for record in root.findall('Record'):
-            if record.get('type') == exerciseID(name):
+            if record.get('type') == self.exerciseID(name):
                 value = record.get('value')
                 exerciseData.append(value)
         lengthOfDataEntries = len(exerciseData)
@@ -92,12 +98,12 @@ class Anlaysis:
         #Display the number of attributes within each element
         numDict = []
         for record in root.iter('Record'):
-            if record.get('type') == exerciseID(name):
+            if record.get('type') == self.exerciseID(name):
                 numDict.append(record.attrib)
         lengthOfDiction = len(numDict)
         
         #List the date range for exercise data
-        dataRange(name)
+        self.dataRange(self.name)
 
     #Test Case: The number of child elements in the root should equal the number of dictionaries. If this is not the case then we have missing data entries.
         def testElementEqualChild(): 
@@ -108,7 +114,7 @@ class Anlaysis:
 
 
     #Extract attributes from record element
-    def exerciseData(start_date,end_date,name):
+    def exerciseData(self,start_date,end_date,name):
         """
         Create a pandas dataframe of a given health metric listing two columns containing the dates and measured values.
 
@@ -123,13 +129,13 @@ class Anlaysis:
 
         #Extract values for specified health metric
         for record in root.findall('Record'):
-            if record.get('type') == exerciseID(name):
+            if record.get('type') == self.exerciseID(name):
                 unit = record.get('unit') #Units 
                 value = record.get('value') #Values
                 creationDate = record.get('creationDate') #Date recorded
                 measurment.append(value) #Append value (count/min)
                 timeOfEntry.append(creationDate) #Append creation dates to the Dates
-        print("Type:", exerciseID(name)) #Output name of health biometric
+        print("Type:", self.exerciseID(name)) #Output name of health biometric
         columns.append('Heart Rate:' + unit)
         columns.append('Date')
         
