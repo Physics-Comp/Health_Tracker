@@ -70,38 +70,40 @@ def __init__(self, age, restingHeart):
 #Determine fitness based on resting heart rate
 def health_status_resting_heart_rate(self,age,restingHeart):
     """
-    We are going to define a series of lists containing tuples with age as the first metric and heart rate as the second metric
-    for a series of health types.
+    Pass age and resting heartrate as the parameters to the function to determine
+    a person's health status.
+
+    Ex. health_status_resting_heart_rate(18,49)
+
+    Output: Athlete
     """
 
     #List cotaining the different health types
     health_list = [self.athlete,self.excellent,self.good,self.above_average,self.average,self.below_average,self.poor]
-
+    health_status = []
     #Logic to determine a person's health type based on age and heart-rate
     for i in range(len(health_list)):
-        print("Code1")
         for j in range(len(health_list[i])):
-            print("Code2")
             if (age in health_list[0][j][0]) and (restingHeart in health_list[0][j][1]):
-                print("Athlete")
+                health_status.append("Athlete")
                 break
             elif (age in health_list[1][j][0]) and (restingHeart in health_list[1][j][1]):
-                print("Excellent")
+                health_status.append("Excellent")
                 break
             elif (age in health_list[2][j][0]) and (restingHeart in health_list[2][j][1]):
-                print("Good")
+                health_status.append("Good")
                 break
             elif (age in health_list[3][j][0]) and (restingHeart in health_list[3][j][1]):
-                print("Above Average")
+                health_status.append("Above Average")
                 break
             elif (age in health_list[4][j][0]) and (restingHeart in health_list[4][j][1]):
-                print("Average")
+                health_status.append("Average")
                 break
             elif (age in health_list[5][j][0]) and (restingHeart in health_list[5][j][1]):
-                print("Below Average")
+                health_status.append("Below Average")
                 break
             elif (age in health_list[6][j][0]) and (restingHeart in health_list[6][j][1]):
-                print("Poor")
+                health_status.append("Poor")
                 break
         break
-
+    return health_status         
