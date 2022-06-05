@@ -80,30 +80,30 @@ def health_status_resting_heart_rate(self,age,restingHeart):
 
     #List cotaining the different health types
     health_list = [self.athlete,self.excellent,self.good,self.above_average,self.average,self.below_average,self.poor]
-    health_status = []
+    health_status = "Null"
     #Logic to determine a person's health type based on age and heart-rate
     for i in range(len(health_list)):
         for j in range(len(health_list[i])):
             if (age in health_list[0][j][0]) and (restingHeart in health_list[0][j][1]):
-                health_status.append("Athlete")
+                health_status.replace("Null","Athlete")
                 break
             elif (age in health_list[1][j][0]) and (restingHeart in health_list[1][j][1]):
-                health_status.append("Excellent")
+                health_status.replace("Null","Excellent")
                 break
             elif (age in health_list[2][j][0]) and (restingHeart in health_list[2][j][1]):
-                health_status.append("Good")
+                health_status.replace("Null","Good")
                 break
             elif (age in health_list[3][j][0]) and (restingHeart in health_list[3][j][1]):
-                health_status.append("Above Average")
+                health_status.replace("Null","Above Average")
                 break
             elif (age in health_list[4][j][0]) and (restingHeart in health_list[4][j][1]):
-                health_status.append("Average")
+                health_status.replace("Null","Average")
                 break
             elif (age in health_list[5][j][0]) and (restingHeart in health_list[5][j][1]):
-                health_status.append("Below Average")
+                health_status.replace("Null","Below Average")
                 break
             elif (age in health_list[6][j][0]) and (restingHeart in health_list[6][j][1]):
-                health_status.append("Poor")
+                health_status.replace("Null","Poor")
                 break
         break
     return health_status         
