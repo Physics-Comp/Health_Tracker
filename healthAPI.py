@@ -116,18 +116,18 @@ def exerciseData(start_date,end_date,name):
     """
     columns = []
     rows = []
-    measurment = [] #Measured values of health metric
-    timeOfEntry = [] #Date 
+    measurment = [] 
+    timeOfEntry = [] 
 
     #Extract values for specified health metric
     for record in root.findall('Record'):
         if record.get('type') == exerciseID(name):
-            unit = record.get('unit') #Units 
-            value = record.get('value') #Values
-            creationDate = record.get('creationDate') #Date recorded
-            measurment.append(value) #Append value (count/min)
-            timeOfEntry.append(creationDate) #Append creation dates to the Dates
-    print("Type:", exerciseID(name)) #Output name of health biometric
+            unit = record.get('unit')  
+            value = record.get('value')
+            creationDate = record.get('creationDate')
+            measurment.append(value)
+            timeOfEntry.append(creationDate) 
+    print("Type:", exerciseID(name)) 
     columns.append('Heart Rate:' + unit)
     columns.append('Date')
     

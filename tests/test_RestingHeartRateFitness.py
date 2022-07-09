@@ -4,7 +4,7 @@ from features.hs_resting_heart import health_status_resting_heart_rate
 class restingHeartTests:
     """
     Testing the core functionality of the resting heart rate class. Determine the health 
-    status given an age and resting heartrate
+    status given an age and resting heart rate.
     """
     def test_athlete_one(self):
         athlete = health_status_resting_heart_rate(18,49)
