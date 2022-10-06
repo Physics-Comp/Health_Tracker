@@ -1,4 +1,4 @@
-import pytest
+import pytest #pip install pytest
 from features.hs_resting_heart import health_status_resting_heart_rate
 
 class restingHeartTests:
