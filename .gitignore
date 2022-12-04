@@ -1,2 +1,5 @@
 # Generate CSV #
 *.csv
+
+# Unzipped export.xml files
+/Health_API/datasets/export*.xml
