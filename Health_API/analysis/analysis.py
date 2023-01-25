@@ -1,8 +1,9 @@
 #Import API to parse XML data
 import re
+from health_path.path import Path
 
 class Record:
-#Extract all the XML Record and output the number of each tag
+#Extract all the XML Record tags and output the number of each tag
     def record_dictionary(root):
         """
         Summary: 
@@ -38,6 +39,7 @@ class Record:
         Ex:
         record_dict = concise_biometric_dict("Root/data/biometric")
         """
+        
         record_dict = Record.record_dictionary(root)
         remove_prefix = [re.sub(r'^HKQuantityTypeIdentifier|^HKDataType|^HKCategoryTypeIdentifier', "", records) for records in record_dict.keys()]
         edit_name = [re.sub(r"([a-z])([A-Z])", r"\1_\2", t) for t in remove_prefix]
